@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object Creator</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/models/Message.js"></script>
     <script defer src="./js/main.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <form>
-            <label for="title">TITLE: </label>
-            <input type="text" name="title" id="title">
-            <label for="description">DESCRIPTION: </label>
-            <input type="text" name="description" id="description">
+            <label for="title">TITLE: </label><br>
+            <input type="text" name="title" id="title"><br>
+            <label for="image">UPLOAD IMAGE: </label><br>
+            <input type="file" name="image" id="image"><br>
+            <label for="description">DESCRIPTION: </label><br>
+            <input type="text" name="description" id="description"><br>
+            <button type="submit" id="submit">STRINGIFY</button>
         </form>
+        <div id="output">
+            <p>COPY THIS:</p>
+            <div class="jsonStringOutput"></div>
+        </div>
     </div>
 </body>
 </html>
